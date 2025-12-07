@@ -1,10 +1,19 @@
 """
 Hola!! 
-Para correr esta app abre la carpeta en positron o vs studio y corre el script de app.py
-Se abrirá en la terminal un link que te lleva a una pagina en tu local host. 
-Puedes escoger si abrirla dentro del mismo IDE, pero a mí me gusta más la experiencia desde tu default browser. 
 
-Probablemente no te corra la primera vez, pero es cosa de instalar las liberías con "pip install" y ya! debería funcionar sin problema :) 
+Estos son los pasos para correr esta app: 
+1. Crea una carpeta. 
+2. Guarda en esa carpeta este archivo bajo el nombre app.py
+3. Guarda en esa carpeta el archivo del modelo (solamente funciona con el modelo final) bajo el nombre de model.pth
+    --> Yo recomiendo usar el de la época 4 (la de mejor performance). 
+4. Abre la carpeta en positron o vs studio y corre el script de app.py
+5. Se abrirá en la terminal un link que te lleva a una pagina en tu local host. 
+    --> Puedes escoger si abrirla dentro del mismo IDE, pero a mí me gusta más la experiencia desde tu default browser. 
+    --> Probablemente no te corra la primera vez, pero es cosa de instalar las liberías con "pip install" debería funcionar sin problema :) 
+    
+Y listo! 
+
+PD. Si gustas que te comparta la carpeta comprimida lista para correr dime en un correo y con gusto lo hago... solo que el archivo del modelo fue muy pesado para github :/ 
 """
 
 import torch
@@ -314,3 +323,4 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)
+
